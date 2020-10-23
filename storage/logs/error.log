@@ -49,3 +49,125 @@
 2020-10-22 16:16:02 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
 2020-10-22 16:16:02 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
 2020-10-22 16:16:02 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-23 4:48:35 - PHP Notice:  Undefined index: product_id in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 17
+2020-10-23 4:56:13 - PHP Notice:  Undefined index: product_id in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 22
+2020-10-23 4:56:16 - PHP Notice:  Undefined index: product_id in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 22
+2020-10-23 4:57:49 - PHP Notice:  Undefined index: product_id in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 18
+2020-10-23 4:57:49 - PHP Notice:  Undefined index: product_id in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 22
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 138
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 144
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 150
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 156
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 162
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 169
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 175
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 182
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 188
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 221
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 221
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 221
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 221
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 221
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 251
+2020-10-23 5:03:54 - PHP Warning:  Use of undefined constant HOST - assumed 'HOST' (this will throw an Error in a future version of PHP) in C:\OpenServer\domains\some\catalog\controller\common\home.php on line 259
+2020-10-23 5:19:50 - PHP Warning:  unlink(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603433990): No such file or directory in C:\OpenServer\domains\some\system\library\cache\file.php on line 68
+2020-10-23 5:21:27 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603434087): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-23 5:21:27 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-23 5:21:27 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-23 5:21:27 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-23 5:21:27 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-23 5:21:27 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-23 5:23:56 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603434236): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-23 5:23:56 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-23 5:23:56 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-23 5:23:56 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-23 5:23:56 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-23 5:23:56 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-23 5:38:00 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603435080): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-23 5:38:00 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-23 5:38:00 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-23 5:38:00 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-23 5:38:00 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-23 5:38:00 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:39:34 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:39:34 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:39:34 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:39:34 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:39:34 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:39:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:39:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:39:34 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:39:34 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:39:34 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:39:34 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:39:34 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:39:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:39:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:39:34 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:39:34 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:39:34 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:39:34 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:39:34 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:39:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:39:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:39:34 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:39:34 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:39:34 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:39:34 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:39:34 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:39:34 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:39:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:39:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:41:02 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:41:02 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:41:02 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:41:02 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:41:02 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:41:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:41:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:41:02 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:41:02 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:41:02 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:41:02 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:41:02 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:41:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:41:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:41:02 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:41:02 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:41:02 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:41:02 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:41:02 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:41:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:41:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:41:02 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:41:02 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:41:02 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:41:02 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:41:02 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:41:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:41:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 149
+2020-10-23 5:41:02 - PHP Warning:  A non-numeric value encountered in C:\OpenServer\domains\some\system\library\image.php on line 166
+2020-10-23 5:41:02 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be int, string given in C:\OpenServer\domains\some\system\library\image.php on line 169
+2020-10-23 5:41:02 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 172
+2020-10-23 5:41:02 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 173
+2020-10-23 5:41:02 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 174
+2020-10-23 5:41:02 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 175
+2020-10-23 5:41:02 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 180
+2020-10-23 5:41:02 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\OpenServer\domains\some\system\library\image.php on line 182
+2020-10-23 5:41:03 - PHP Warning:  unlink(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603435262): Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 68

@@ -19,26 +19,26 @@
                             </div>
                         </div>
                     </div>
-                    {% endif %}
+                {% endif %}
                 {% if images %}
                     {% for image in images %}
-            <div class="carousel-item">
-                <div class="row">
+                        <div class="carousel-item">
+                            <div class="row">
 
-                    <div class="col-3">
-                        <img src="{{ image.thumb }}" class="galery_left" alt="">
-                    </div>
-                    <div class="col-10">
-                        <img src="{{ image.popup }}" class="galery_main" alt="">
-                    </div>
-                    <div class="col-3">
-                        <img src="{{ image.thumb }}" class="galery_right" alt="">
-                    </div>
+                                <div class="col-3">
+                                    <img src="{{ image.thumb }}" class="galery_left" alt="">
+                                </div>
+                                <div class="col-10">
+                                    <img src="{{ image.popup }}" class="galery_main" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="{{ image.thumb }}" class="galery_right" alt="">
+                                </div>
 
-                </div>
-            </div>
+                            </div>
+                        </div>
                     {% endfor %}
-                    {% endif %}
+                {% endif %}
             {% endif %}
         </div>
         <a class="carousel-control-prev d-none d-md-flex" href="#galeryCarousel" role="button" data-slide="prev">
@@ -56,8 +56,8 @@
     <div class="row justify-content-center mt-4">
         <a class="d-md-none d-inline-block galery-arrow-mini" href="#galeryCarousel" role="button" data-slide="prev"><img src="/catalog/view/theme/montazh/image/svg/left_arrow.svg" class="col d-md-none" alt=""></a>
         {% if images %}
-        {% for image in images %}
-        <div class="col d-none d-md-flex col-md-1"><img src="{{ image.thumb }}" alt=""></div>
+            {% for image in images %}
+                <div class="col d-none d-md-flex col-md-1"><img src="{{ image.thumb }}" alt=""></div>
             {% else %}
                 <div class="col d-none d-md-flex col-md-1"><img src="{{ thumb }}" alt=""></div>
             {% endfor %}
@@ -115,7 +115,7 @@
 </div>
 
 <!-- parser -->
-<div class="container mt-5 pd-5"> </div>
+<div class="container mt-5 pd-5"> </div>
 
 <!-- Fourth block -->
 <div class="container">
@@ -203,5 +203,5 @@
     </div>
 </div>
 
-<div class="container mt-2 pt-1"> </div>
+<div class="container mt-2 pt-1"> </div>
 {{ footer }}
