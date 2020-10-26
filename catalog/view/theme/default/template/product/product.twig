@@ -63,7 +63,6 @@
             {% endfor %}
         {% endif %}
         <a class="d-md-none d-inline-block galery-arrow-mini" href="#galeryCarousel" role="button" data-slide="next"><img src="/catalog/view/theme/montazh/image/svg/right_arrow.svg" class="col d-md-none" alt=""></a>
-        </a>
     </div>
     <div class="row justify-content-center">
         <div class="col-10 mt-5">
@@ -122,86 +121,81 @@
     <div class="row justify-content-center">
         <h1 class="font-weight-bold text-center">Карточки товаров</h1>
     </div>
-    <div class="tags mt-5">
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
-        <button class="hashtag">#Наименование</button>
+    <div class="tags mt-5" id="categories">
+        {% if categories %}
+            {% for category_all in categories %}
+        <button class="hashtag" id="{{ category_all.id }}" data-href="{{ category_all.href }}">#{{ category_all.name }}</button>
+            {% endfor %}
+        {% endif %}
     </div>
-    <div class="shop-carousel">
-        <div class="col-12 col-lg-4 mt-5">
-            <div class="card bg-light border border-white">
-                <img class="card-img-top" src="/catalog/view/theme/montazh/image/r42.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Типовой проект #</h5>
-                    <p class="card-text">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                    <h5 class="mb-4 font-weight-bold">От 2 500 000 руб</h5>
-                    <a href="#" class="btn btn-primary">Смотреть проект</a>
+    <div class="shop-carousel" id="productsbottom">
+        {% for productbottom in productsbottom %}
+            <div class="col-12 col-lg-4 mt-5 appended">
+                <div class="card bg-light border border-white">
+                    <img class="card-img-top" src="{{ productbottom.thumb }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ productbottom.name }}#</h5>
+                        <p class="card-text">{{ productbottom.description }}</p>
+                        <h5 class="mb-4 font-weight-bold">От {{ productbottom.price }}</h5>
+                        <a href="{{ productbottom.href }}" class="btn btn-primary">Смотреть проект</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-lg-4 mt-5">
-            <div class="card bg-light border border-white">
-                <img class="card-img-top" src="/catalog/view/theme/montazh/image/r43.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Типовой проект #</h5>
-                    <p class="card-text">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                    <h5 class="mb-4 font-weight-bold">От 2 500 000 руб</h5>
-                    <a href="#" class="btn btn-primary">Смотреть проект</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4 mt-5">
-            <div class="card bg-light border border-white">
-                <img class="card-img-top" src="/catalog/view/theme/montazh/image/r44.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Типовой проект #</h5>
-                    <p class="card-text">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                    <h5 class="mb-4 font-weight-bold">От 2 500 000 руб</h5>
-                    <a href="#" class="btn btn-primary">Смотреть проект</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4 mt-5">
-            <div class="card bg-light border border-white">
-                <img class="card-img-top" src="/catalog/view/theme/montazh/image/r42.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Типовой проект #</h5>
-                    <p class="card-text">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                    <h5 class="mb-4 font-weight-bold">От 2 500 000 руб</h5>
-                    <a href="#" class="btn btn-primary">Смотреть проект</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4 mt-5">
-            <div class="card bg-light border border-white">
-                <img class="card-img-top" src="/catalog/view/theme/montazh/image/r43.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Типовой проект #</h5>
-                    <p class="card-text">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                    <h5 class="mb-4 font-weight-bold">От 2 500 000 руб</h5>
-                    <a href="#" class="btn btn-primary">Смотреть проект</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4 mt-5">
-            <div class="card bg-light border border-white">
-                <img class="card-img-top" src="/catalog/view/theme/montazh/image/r44.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Типовой проект #</h5>
-                    <p class="card-text">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                    <h5 class="mb-4 font-weight-bold">От 2 500 000 руб</h5>
-                    <a href="#" class="btn btn-primary">Смотреть проект</a>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
 <div class="container mt-2 pt-1"> </div>
+<script>
+    $(document).ready(function(){
+       $('body #categories button').on('click', function(e){
+          e.preventDefault();
+          // $('body #productsbottom .appended').remove();
+          $.ajax({
+              url: '/index.php?route=product/product/categoryProductsAjax&category_id=' + $(this).attr('id'),
+              type: 'GET',
+              dataType: 'json'
+          }).done(function(data){
+              if(data.products.length >= 4) {
+                  $('body #productsbottom .appended').remove();
+                  $('body #productsbottom').css('display', 'block');
+                  $.each(data.products, function (i, item) {
+                      var html = '<div class="col-12 col-lg-4 mt-5 appended" id="appended_' + i + '">' +
+                          '<div class="card bg-light border border-white">' +
+                          '<img class="card-img-top" src="' + item.thumb + '" alt="Card image cap">' +
+                          '<div class="card-body">' +
+                          '<h5 class="card-title">' + item.name + '#</h5>' +
+                          '<p class="card-text">' + item.description + '</p>' +
+                          '<h5 class="mb-4 font-weight-bold">От ' + item.price + '</h5>' +
+                          '<a href="' + item.href + '" class="btn btn-primary">Смотреть проект</a>' +
+                          '</div>' +
+                          '</div>' +
+                          '</div>';
+                          $('body #productsbottom').slick('slickAdd', html);
+                  });
+              }else{
+                  /*$('.shop-carousel').slick('unslick');*/
+                  $('body #productsbottom .appended').remove();
+                  $('body #productsbottom').css('display', 'flex');
+
+                  $.each(data.products, function (i, item) {
+                      var html = '<div class="col-12 col-lg-4 mt-5 appended" id="appended_' + i + '">' +
+                          '<div class="card bg-light border border-white">' +
+                          '<img class="card-img-top" src="' + item.thumb + '" alt="Card image cap">' +
+                          '<div class="card-body">' +
+                          '<h5 class="card-title">' + item.name + '#</h5>' +
+                          '<p class="card-text">' + item.description + '</p>' +
+                          '<h5 class="mb-4 font-weight-bold">От ' + item.price + '</h5>' +
+                          '<a href="' + item.href + '" class="btn btn-primary">Смотреть проект</a>' +
+                          '</div>' +
+                          '</div>' +
+                          '</div>';
+                          $('body #productsbottom').append(html);
+                          $('body #productsbottom .slick-dots').css('display', 'none');
+                  });
+              }
+          })
+          });
+    });
+</script>
 {{ footer }}
