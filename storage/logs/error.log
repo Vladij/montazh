@@ -409,3 +409,29 @@
 2020-10-26 13:41:01 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
 2020-10-26 13:41:01 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
 2020-10-26 13:41:01 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-26 18:10:02 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603739402): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-26 18:10:02 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-26 18:10:02 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-26 18:10:02 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-26 18:10:02 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-26 18:10:02 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-26 18:16:37 - PHP Warning:  unlink(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603739797): No such file or directory in C:\OpenServer\domains\some\system\library\cache\file.php on line 68
+2020-10-26 18:25:02 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603740302): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-26 18:25:02 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-26 18:25:02 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-26 18:25:02 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-26 18:25:02 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-26 18:25:02 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-26 18:30:21 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603740621): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-26 18:30:21 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-26 18:30:21 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-26 18:30:21 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-26 18:30:21 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-26 18:30:21 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59
+2020-10-26 18:47:29 - PHP Warning:  unlink(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603741649): Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 68
+2020-10-26 18:48:35 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603741715): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-26 18:48:35 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-26 18:48:35 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-26 18:48:35 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-26 18:48:35 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-26 18:48:35 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59

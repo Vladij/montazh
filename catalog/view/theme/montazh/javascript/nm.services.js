@@ -10,8 +10,8 @@ $(document).ready(function() {
 		infinite: true,
 		autoplay:true,
 		autoplaySpeed:2000,
-		nextArrow:'<img src="img/svg/right_arrow.svg" class="arrow right d-none d-md-block" alt="">',
-		prevArrow:'<img src="img/svg/left_arrow.svg" class="arrow left d-none d-md-block" alt="">',
+		nextArrow:'<img src="/catalog/view/theme/montazh/image/svg/right_arrow.svg" class="arrow right d-none d-md-block" alt="">',
+		prevArrow:'<img src="/catalog/view/theme/montazh/image/svg/left_arrow.svg" class="arrow left d-none d-md-block" alt="">',
 		speed: 300,
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -38,8 +38,8 @@ $(document).ready(function() {
 	$('.blog-carousel').slick({
 		dots: true,
 		infinite: true,
-		nextArrow:'<img src="img/svg/right_arrow.svg" class="arrow right d-none d-md-block" alt="">',
-		prevArrow:'<img src="img/svg/left_arrow.svg" class="arrow left d-none d-md-block" alt="">',
+		nextArrow:'<img src="/catalog/view/theme/montazh/image/svg/right_arrow.svg" class="arrow right d-none d-md-block" alt="">',
+		prevArrow:'<img src="/catalog/view/theme/montazh/image/svg/left_arrow.svg" class="arrow left d-none d-md-block" alt="">',
 		speed: 300,
 		autoplay:true,
 		autoplaySpeed:2000,
@@ -67,8 +67,8 @@ $(document).ready(function() {
 	$('.feedback-carousel').slick({
 		dots: true,
 		infinite: true,
-		nextArrow:'<img src="img/svg/right_arrow.svg" class="arrow right d-none d-md-block" style="left:100%;" alt="">',
-		prevArrow:'<img src="img/svg/left_arrow.svg" class="arrow left d-none d-md-block" style="left:-5%;" alt="">',
+		nextArrow:'<img src="/catalog/view/theme/montazh/image/svg/right_arrow.svg" class="arrow right d-none d-md-block" style="left:100%;" alt="">',
+		prevArrow:'<img src="/catalog/view/theme/montazh/image/svg/left_arrow.svg" class="arrow left d-none d-md-block" style="left:-5%;" alt="">',
 		speed: 300,
 		autoplay:true,
 		autoplaySpeed:2000,
@@ -153,13 +153,13 @@ $(document).ready(function() {
 
     function showListServices() {
     	$('#services_modal').fadeIn(200);
-    	$('#services #icon').html('<img src="img/svg/cmw.svg">');
+    	$('#services #icon').html('<img src="/catalog/view/theme/montazh/image/svg/cmw.svg">');
     	$('#services').attr('v-status', 'visible');
     	$('#services #icon img').css('width', '18px');
     }
     function hideListServices() {
     	$('#services_modal').fadeOut(200);
-    	$('#services #icon').html('<img src="img/svg/icon-first.svg">');
+    	$('#services #icon').html('<img src="/catalog/view/theme/montazh/image/svg/icon-first.svg">');
     	$('#services').attr('v-status', 'hidden');
     }
 	function hideModal() {

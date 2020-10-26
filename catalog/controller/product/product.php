@@ -753,12 +753,13 @@ class ControllerProductProduct extends Controller
                 'start' => ($page - 1) * 10,
                 'limit' => 10
             );
+            $this->load->model('tool/image');
             $results = $this->model_catalog_product->getProducts($filter_data);
             foreach ($results as $result) {
                 if ($result['image']) {
-                    $image = '/image/' . $result['image'];
+                    $image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
                 } else {
-                    $image = '/image/placeholder.png';
+                    $image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
                 }
 
                 if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
