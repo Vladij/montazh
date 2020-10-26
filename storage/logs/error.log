@@ -403,3 +403,9 @@
 2020-10-26 12:57:17 - PHP Notice:  Undefined index: path in C:\OpenServer\domains\some\catalog\controller\product\product.php on line 489
 2020-10-26 12:57:17 - PHP Notice:  Undefined index: path in C:\OpenServer\domains\some\catalog\controller\product\product.php on line 489
 2020-10-26 13:28:16 - PHP Warning:  unlink(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603722496): Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 68
+2020-10-26 13:41:01 - PHP Warning:  fopen(C:/OpenServer/domains/some/storage/cache/cache.catalog.language.1603723261): failed to open stream: Permission denied in C:\OpenServer\domains\some\system\library\cache\file.php on line 49
+2020-10-26 13:41:01 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 51
+2020-10-26 13:41:01 - PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 53
+2020-10-26 13:41:01 - PHP Warning:  fflush() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 55
+2020-10-26 13:41:01 - PHP Warning:  flock() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 57
+2020-10-26 13:41:01 - PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\OpenServer\domains\some\system\library\cache\file.php on line 59

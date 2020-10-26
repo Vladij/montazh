@@ -224,7 +224,7 @@ class ControllerProductProduct extends Controller
             }
 
             $data['breadcrumbs'][] = array(
-                'text' => $product_info['name'],
+                'text' => 'Главная / ' . $product_info['name'],
                 'href' => $this->url->link('product/product', $url . '&product_id=' . $this->request->get['product_id'])
             );
 

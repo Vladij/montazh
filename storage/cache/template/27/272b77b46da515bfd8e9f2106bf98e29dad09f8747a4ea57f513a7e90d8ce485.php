@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* default/template/product/product.twig */
-class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918f5b7c extends \Twig\Template
+class __TwigTemplate_2c17528c97de21c871ec7caca5beffcb15795df3b9b62b2d476b829c8c85a333 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -44,7 +44,7 @@ class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918
         $context['_seq'] = twig_ensure_traversable(($context["breadcrumbs"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["breadcrumb"]) {
             // line 5
-            echo "        <p class=\"path\">";
+            echo "        <p class=\"path\">Главная /";
             echo twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "text", [], "any", false, false, false, 5);
             echo "</p>
     ";
@@ -304,14 +304,29 @@ class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918
         $context['_seq'] = twig_ensure_traversable(($context["productsbottom"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["productbottom"]) {
             // line 133
-            echo "            <div class=\"col-12 col-lg-4 mt-5\">
+            echo "            <div class=\"col-12 col-lg-4 mt-5 appended\">
                 <div class=\"card bg-light border border-white\">
-                    <img class=\"card-img-top\" src=\"/catalog/view/theme/montazh/image/r42.png\" alt=\"Card image cap\">
+                    <img class=\"card-img-top\" src=\"";
+            // line 135
+            echo twig_get_attribute($this->env, $this->source, $context["productbottom"], "thumb", [], "any", false, false, false, 135);
+            echo "\" alt=\"Card image cap\">
                     <div class=\"card-body\">
-                        <h5 class=\"card-title\">Типовой проект #</h5>
-                        <p class=\"card-text\">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>
-                        <h5 class=\"mb-4 font-weight-bold\">От 2 500 000 руб</h5>
-                        <a href=\"#\" class=\"btn btn-primary\">Смотреть проект</a>
+                        <h5 class=\"card-title\">";
+            // line 137
+            echo twig_get_attribute($this->env, $this->source, $context["productbottom"], "name", [], "any", false, false, false, 137);
+            echo "#</h5>
+                        <p class=\"card-text\">";
+            // line 138
+            echo twig_get_attribute($this->env, $this->source, $context["productbottom"], "description", [], "any", false, false, false, 138);
+            echo "</p>
+                        <h5 class=\"mb-4 font-weight-bold\">От ";
+            // line 139
+            echo twig_get_attribute($this->env, $this->source, $context["productbottom"], "price", [], "any", false, false, false, 139);
+            echo "</h5>
+                        <a href=\"";
+            // line 140
+            echo twig_get_attribute($this->env, $this->source, $context["productbottom"], "href", [], "any", false, false, false, 140);
+            echo "\" class=\"btn btn-primary\">Смотреть проект</a>
                     </div>
                 </div>
             </div>
@@ -327,9 +342,9 @@ class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918
 <div class=\"container mt-2 pt-1\"> </div>
 <script>
     \$(document).ready(function(){
-       \$('body').on('click', '#categories button', function(e){
+       \$('body #categories button').on('click', function(e){
           e.preventDefault();
-           /*\$('body #productsbottom .appended').remove();*/
+          // \$('body #productsbottom .appended').remove();
           \$.ajax({
               url: '/index.php?route=product/product/categoryProductsAjax&category_id=' + \$(this).attr('id'),
               type: 'GET',
@@ -341,12 +356,12 @@ class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918
                   \$.each(data.products, function (i, item) {
                       var html = '<div class=\"col-12 col-lg-4 mt-5 appended\" id=\"appended_' + i + '\">' +
                           '<div class=\"card bg-light border border-white\">' +
-                          '<img class=\"card-img-top\" src=\"/catalog/view/theme/montazh/image/r44.png\" alt=\"Card image cap\">' +
+                          '<img class=\"card-img-top\" src=\"' + item.thumb + '\" alt=\"Card image cap\">' +
                           '<div class=\"card-body\">' +
                           '<h5 class=\"card-title\">' + item.name + '#</h5>' +
-                          '<p class=\"card-text\">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>' +
-                          '<h5 class=\"mb-4 font-weight-bold\">От 2 500 000 руб</h5>' +
-                          '<a href=\"#\" class=\"btn btn-primary\">Смотреть проект</a>' +
+                          '<p class=\"card-text\">' + item.description + '</p>' +
+                          '<h5 class=\"mb-4 font-weight-bold\">От ' + item.price + '</h5>' +
+                          '<a href=\"' + item.href + '\" class=\"btn btn-primary\">Смотреть проект</a>' +
                           '</div>' +
                           '</div>' +
                           '</div>';
@@ -360,12 +375,12 @@ class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918
                   \$.each(data.products, function (i, item) {
                       var html = '<div class=\"col-12 col-lg-4 mt-5 appended\" id=\"appended_' + i + '\">' +
                           '<div class=\"card bg-light border border-white\">' +
-                          '<img class=\"card-img-top\" src=\"/catalog/view/theme/montazh/image/r44.png\" alt=\"Card image cap\">' +
+                          '<img class=\"card-img-top\" src=\"' + item.thumb + '\" alt=\"Card image cap\">' +
                           '<div class=\"card-body\">' +
                           '<h5 class=\"card-title\">' + item.name + '#</h5>' +
-                          '<p class=\"card-text\">Sagittis, etiam purus sit turpis Sagittis, etiam purus sit turpis</p>' +
-                          '<h5 class=\"mb-4 font-weight-bold\">От 2 500 000 руб</h5>' +
-                          '<a href=\"#\" class=\"btn btn-primary\">Смотреть проект</a>' +
+                          '<p class=\"card-text\">' + item.description + '</p>' +
+                          '<h5 class=\"mb-4 font-weight-bold\">От ' + item.price + '</h5>' +
+                          '<a href=\"' + item.href + '\" class=\"btn btn-primary\">Смотреть проект</a>' +
                           '</div>' +
                           '</div>' +
                           '</div>';
@@ -394,7 +409,7 @@ class __TwigTemplate_9ad852fdbdc2cab7122df914ca49608ddd516f378debf601694597fe918
 
     public function getDebugInfo()
     {
-        return array (  382 => 201,  324 => 145,  307 => 133,  303 => 132,  299 => 130,  296 => 129,  283 => 127,  278 => 126,  276 => 125,  263 => 114,  257 => 111,  251 => 107,  248 => 106,  245 => 105,  237 => 102,  228 => 99,  223 => 97,  220 => 96,  216 => 95,  208 => 90,  204 => 88,  199 => 87,  197 => 86,  187 => 79,  171 => 65,  168 => 64,  159 => 62,  151 => 60,  145 => 59,  143 => 58,  126 => 43,  123 => 42,  120 => 41,  108 => 35,  102 => 32,  96 => 29,  90 => 25,  85 => 24,  82 => 23,  74 => 18,  69 => 15,  66 => 14,  64 => 13,  56 => 7,  47 => 5,  43 => 4,  37 => 1,);
+        return array (  397 => 201,  339 => 145,  328 => 140,  324 => 139,  320 => 138,  316 => 137,  311 => 135,  307 => 133,  303 => 132,  299 => 130,  296 => 129,  283 => 127,  278 => 126,  276 => 125,  263 => 114,  257 => 111,  251 => 107,  248 => 106,  245 => 105,  237 => 102,  228 => 99,  223 => 97,  220 => 96,  216 => 95,  208 => 90,  204 => 88,  199 => 87,  197 => 86,  187 => 79,  171 => 65,  168 => 64,  159 => 62,  151 => 60,  145 => 59,  143 => 58,  126 => 43,  123 => 42,  120 => 41,  108 => 35,  102 => 32,  96 => 29,  90 => 25,  85 => 24,  82 => 23,  74 => 18,  69 => 15,  66 => 14,  64 => 13,  56 => 7,  47 => 5,  43 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
