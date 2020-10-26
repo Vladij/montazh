@@ -231,8 +231,17 @@ class ControllerCommonHome extends Controller {
             $url .= '&limit=' . $this->request->get['limit'];
         }
 
-        $url = str_replace_once('&', '?', $url);
+        $url = '';
+        $resultsCategories = $this->model_catalog_category->getCategories();
+        foreach ($resultsCategories as $categories) {
+            $data['categories'][] = array(
+                'id' => $categories['category_id'],
+                'name' => $categories['name'],
+                'href' => $this->url->link('product/category', 'path=' . $categories['category_id'])
+            );
+        }
 
+        $url = str_replace_once('&', '?', $url);
 
         $pagination = new Pagination();
         $pagination->total = $product_total;

@@ -229,33 +229,28 @@
   <div class="row justify-content-center">
     <h1 class="font-weight-bold text-center">Карточки товаров</h1>
   </div>
-  <div class="tags mt-5">
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-    <button class="hashtag">#Наименование</button>
-  </div>
-  <div class="shop-carousel">
-    {% for product in products %}
-    <div class="col-12 col-lg-4 mt-5">
-      <div class="card bg-light border border-white">
-        <img class="card-img-top" src="{{ product.thumb }}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{ product.name }}</h5>
-          <p class="card-text">{{ product.description }}</p>
-          <h5 class="mb-4 font-weight-bold">От {{ product.price }}</h5>
-          <a href="{{ product.href }}" class="btn btn-primary">Смотреть проект</a>
-        </div>
-      </div>
+    <div class="tags mt-5" id="categories">
+      {% if categories %}
+        {% for category_all in categories %}
+          <button class="hashtag" id="{{ category_all.id }}" data-href="{{ category_all.href }}">#{{ category_all.name }}</button>
+        {% endfor %}
+      {% endif %}
     </div>
-    {% endfor %}
-
-  </div>
+    <div class="shop-carousel" id="productsbottom">
+      {% for product in products %}
+        <div class="col-12 col-lg-4 mt-5 appended">
+          <div class="card bg-light border border-white">
+            <img class="card-img-top" src="{{ product.thumb }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}#</h5>
+              <p class="card-text">{{ product.description }}</p>
+              <h5 class="mb-4 font-weight-bold">От {{ product.price }}</h5>
+              <a href="{{ product.href }}" class="btn btn-primary">Смотреть проект</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   {% endif %}
 </div>
 <!-- Fiveth block -->
@@ -446,4 +441,57 @@
   </div>
   <div class="container mt-5 pt-5"></div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('body #categories button').on('click', function(e){
+      e.preventDefault();
+      // $('body #productsbottom .appended').remove();
+      $.ajax({
+        url: '/index.php?route=product/product/categoryProductsAjax&category_id=' + $(this).attr('id'),
+        type: 'GET',
+        dataType: 'json'
+      }).done(function(data){
+        if(data.products.length >= 4) {
+          $('body #productsbottom .appended').remove();
+          $('body #productsbottom').css('display', 'block');
+          $.each(data.products, function (i, item) {
+            var html = '<div class="col-12 col-lg-4 mt-5 appended" id="appended_' + i + '">' +
+                    '<div class="card bg-light border border-white">' +
+                    '<img class="card-img-top" src="' + item.thumb + '" alt="Card image cap">' +
+                    '<div class="card-body">' +
+                    '<h5 class="card-title">' + item.name + '#</h5>' +
+                    '<p class="card-text">' + item.description + '</p>' +
+                    '<h5 class="mb-4 font-weight-bold">От ' + item.price + '</h5>' +
+                    '<a href="' + item.href + '" class="btn btn-primary">Смотреть проект</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            $('body #productsbottom').slick('slickAdd', html);
+          });
+        }else{
+          /*$('.shop-carousel').slick('unslick');*/
+          $('body #productsbottom .appended').remove();
+          $('body #productsbottom').css('display', 'flex');
+
+          $.each(data.products, function (i, item) {
+            var html = '<div class="col-12 col-lg-4 mt-5 appended" id="appended_' + i + '">' +
+                    '<div class="card bg-light border border-white">' +
+                    '<img class="card-img-top" src="' + item.thumb + '" alt="Card image cap">' +
+                    '<div class="card-body">' +
+                    '<h5 class="card-title">' + item.name + '#</h5>' +
+                    '<p class="card-text">' + item.description + '</p>' +
+                    '<h5 class="mb-4 font-weight-bold">От ' + item.price + '</h5>' +
+                    '<a href="' + item.href + '" class="btn btn-primary">Смотреть проект</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            $('body #productsbottom').append(html);
+            $('body #productsbottom .slick-dots').css('display', 'none');
+          });
+        }
+      })
+    });
+  });
+</script>
 {{ footer }}
