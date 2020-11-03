@@ -138,287 +138,66 @@
 <!-- Modal frames -->
 <div id="services_modal">
   <div id="left_panel">
-    <div id="block" block-id="house" class="active">
-      <p>Строительство домов</p>
-      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div id="block" block-id="terrace">
-      <p>Строительство террас</p>
-      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div id="block" block-id="alcove">
-      <p>Строительство беседок</p>
-      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div id="block" block-id="furniture">
-      <p>Корпусная мебель</p>
-      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div id="block" block-id="bbq">
-      <p>Изготовление барбекю</p>
-      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div id="block" block-id="construct">
-      <p>Сборные конструкции</p>
-      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
+    {% for key, category in categories %}
+      <div id="block" block-id="block{{ key }}" {% if key == 0 %} class="active" {% else %} class {% endif %}>
+        <p>{{ category.name }}</p>
+        {% if category.subcategories %}
+          <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.66663 1.33329L6.33329 5.99996L1.66663 10.6666" stroke="#CCD8E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        {% endif %}
+      </div>
+    {% endfor %}
+
   </div>
   <div id="right_panel">
-    <div id="house" status="showed">
-      <h1>Строительство домов</h1>
-      <table>
-        <tr class="name">
-          <td class="name">Строительство домов</td>
-          <td class="name">Строительство домов</td>
-          <td class="name">Строительство домов</td>
-        </tr>
-        <tr id="parse"></tr>
-        <tr>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-          <td><a href="#">Строительство домов</a></td>
-        </tr>
-      </table>
-    </div>
-    <div id="terrace" status="hidden">
-      <h1>Строительство террас</h1>
-      <table>
-        <tr class="name">
-          <td class="name">Строительство террас</td>
-          <td class="name">Строительство террас</td>
-          <td class="name">Строительство террас</td>
-        </tr>
-        <tr id="parse"></tr>
-        <tr>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-          <td><a href="#">Строительство террас</a></td>
-        </tr>
-      </table>
-    </div>
-    <div id="alcove" status="hidden">
-      <h1>Строительство беседок</h1>
-      <table>
-        <tr class="name">
-          <td class="name">Строительство беседок</td>
-          <td class="name">Строительство беседок</td>
-          <td class="name">Строительство беседок</td>
-        </tr>
-        <tr id="parse"></tr>
-        <tr>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-          <td><a href="#">Строительство беседок</a></td>
-        </tr>
-      </table>
-    </div>
-    <div id="furniture" status="hidden">
-      <h1>Корпусная мебель</h1>
-      <table>
-        <tr class="name">
-          <td class="name">Корпусная мебель</td>
-          <td class="name">Корпусная мебель</td>
-          <td class="name">Корпусная мебель</td>
-        </tr>
-        <tr id="parse"></tr>
-        <tr>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-          <td><a href="#">Корпусная мебель</a></td>
-        </tr>
-      </table>
-    </div>
-    <div id="bbq" status="hidden">
-      <h1>Изготовление барбекю</h1>
-      <table>
-        <tr class="name">
-          <td class="name">Изготовление барбекю</td>
-          <td class="name">Изготовление барбекю</td>
-          <td class="name">Изготовление барбекю</td>
-        </tr>
-        <tr id="parse"></tr>
-        <tr>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-          <td><a href="#">Изготовление барбекю</a></td>
-        </tr>
-      </table>
-    </div>
-    <div id="construct" status="hidden">
-      <h1>Сборные конструкции</h1>
-      <table>
-        <tr class="name">
-          <td class="name">Сборные конструкции</td>
-          <td class="name">Сборные конструкции</td>
-          <td class="name">Сборные конструкции</td>
-        </tr>
-        <tr id="parse"></tr>
-        <tr>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-        </tr>
-        <tr>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-          <td><a href="#">Сборные конструкции</a></td>
-        </tr>
-      </table>
-    </div>
+    {% for key, category in categories %}
+      {% if category.subcategories %}
+
+        <div id="block{{ key }}" {% if key == 0 %} class="bigblock showed" status="showed" {% else %} class="bigblock hidden" status="hidden"{% endif %}>
+          <h1><a href="{{ category.href }}">{{ category.name }}</a></h1>
+          <table>
+
+            <tr class="name">
+              {% for keysub, subcategory in category.subcategories %}
+                <td class="name"><a href="{{ subcategory.href }}">{{ subcategory.name }}</a></td>
+              {% endfor %}
+            </tr>
+            <tr id="parse"></tr>
+            {% for keysub, subcategory in category.subcategories %}
+              {% if subcategory.thirdcategories %}
+                <tr>
+                  {% for thirdcategory in subcategory.thirdcategories %}
+                    <td><a href="{{ thirdcategory.href }}">{{ thirdcategory.name }}</a></td>
+                  {% endfor %}
+                </tr>
+              {% endif %}
+            {% endfor %}
+
+          </table>
+        </div>
+
+      {% endif %}
+    {% endfor %}
+
   </div>
 </div>
+<script>
+  $(document).ready(function(){
+    $('body #services_modal #left_panel #block').on('click', function(){
+      var blocksButtons = $('body #services_modal #left_panel').find('.active');
+      blocksButtons.removeClass('active');
+      $(this).addClass('active');
+      var blockId = $(this).attr('block-id');
+      var bigblock = $(this).closest('#services_modal').find('#right_panel #' + blockId);
+      var bigblocksecond = $(this).closest('#services_modal').find('#right_panel .showed');
+
+      bigblocksecond.removeClass('showed');
+      bigblocksecond.addClass('hidden');
+      bigblock.addClass('showed');
+    });
+  });
+</script>
 <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

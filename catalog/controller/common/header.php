@@ -3,7 +3,7 @@ class ControllerCommonHeader extends Controller {
 	public function index() {
 		// Analytics
 		$this->load->model('setting/extension');
-
+        $this->load->model('catalog/category');
 		$data['analytics'] = array();
 
 		$analytics = $this->model_setting_extension->getExtensions('analytics');
@@ -55,7 +55,40 @@ class ControllerCommonHeader extends Controller {
 		}
 
 		$data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', true), $this->customer->getFirstName(), $this->url->link('account/logout', '', true));
-		
+
+		$data['categories'] = array();
+		$results = $this->model_catalog_category->getCategories();
+
+        foreach ($results as $key => $result) {
+            $filter_data = array(
+                'filter_category_id'  => $result['category_id'],
+                'filter_sub_category' => true
+            );
+
+            $data['categories'][] = array(
+                'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+                'href' => $this->url->link('product/category', 'path=' . $result['category_id'])
+            );
+            $subcategories = $this->model_catalog_category->getCategories($result['category_id']);
+            if($subcategories){
+                foreach($subcategories as $keysub => $subcategory){
+                    $data['categories'][$key]['subcategories'][] = array(
+                      'name' => $subcategory['name'],
+                        'href' => $this->url->link('product/category', 'path=' . $result['category_id'] . '_' . $subcategory['category_id'])
+                    );
+                    $thirdcategories = $this->model_catalog_category->getCategories($subcategory['category_id']);
+                    if($thirdcategories){
+                        foreach($thirdcategories as $thirdcategory){
+                            $data['categories'][$key]['subcategories'][$keysub]['thirdcategories'][] = array(
+                              'name' => $thirdcategory['name'],
+                                'href' => $this->url->link('product/category', 'path=' . $subcategory['category_id'] . '_' . $thirdcategory['category_id'])
+                            );
+                        }
+                    }
+                }
+            }
+        }
+
 		$data['home'] = $this->url->link('common/home');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', true);
 		$data['logged'] = $this->customer->isLogged();
@@ -76,7 +109,9 @@ class ControllerCommonHeader extends Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['menu'] = $this->load->controller('common/menu');
-
+/*		echo "<pre>";
+		var_dump($data['categories']);
+		echo "</pre>";*/
 		return $this->load->view('common/header', $data);
 	}
 }
